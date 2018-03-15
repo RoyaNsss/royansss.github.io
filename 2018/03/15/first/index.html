@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="hello">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Roy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1、language设置中文又问题。按照教程搭建好了hexo，然后在设置的时候出现了问题。按照网上说一切顺利，但是在设置语言的时候出现了问题。里面说是设置language: zh-Hans就可以设置成中文。但是我却设置不成功，然后网上教程说我可能 next/languages/zh-Hans.yml 文件丢失，检查发现并没有。 最后的解决方法：  先执行 hexo clean 清空 把 next/">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建hexo中遇到的坑">
+<meta property="og:url" content="http://yoursite.com/2018/03/15/first/index.html">
 <meta property="og:site_name" content="Roy&#39;s Blog">
-<meta property="og:description" content="hello">
+<meta property="og:description" content="1、language设置中文又问题。按照教程搭建好了hexo，然后在设置的时候出现了问题。按照网上说一切顺利，但是在设置语言的时候出现了问题。里面说是设置language: zh-Hans就可以设置成中文。但是我却设置不成功，然后网上教程说我可能 next/languages/zh-Hans.yml 文件丢失，检查发现并没有。 最后的解决方法：  先执行 hexo clean 清空 把 next/">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-15T15:57:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Roy&#39;s Blog">
-<meta name="twitter:description" content="hello">
+<meta name="twitter:title" content="搭建hexo中遇到的坑">
+<meta name="twitter:description" content="1、language设置中文又问题。按照教程搭建好了hexo，然后在设置的时候出现了问题。按照网上说一切顺利，但是在设置语言的时候出现了问题。里面说是设置language: zh-Hans就可以设置成中文。但是我却设置不成功，然后网上教程说我可能 next/languages/zh-Hans.yml 文件丢失，检查发现并没有。 最后的解决方法：  先执行 hexo clean 清空 把 next/">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/15/first/"/>
 
 
 
 
 
-  <title>Roy's Blog</title>
+  <title>搭建hexo中遇到的坑 | Roy's Blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,9 +228,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -259,9 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/15/first/" itemprop="url">搭建hexo中遇到的坑</a></h1>
+          <h1 class="post-title" itemprop="name headline">搭建hexo中遇到的坑</h1>
         
 
         <div class="post-meta">
@@ -311,18 +310,16 @@
       
 
       
-        
-          
-          1、language设置中文又问题。按照教程搭建好了hexo，然后在设置的时候出现了问题。按照网上说一切顺利，但是在设置语言的时候出现了问题。里面说是设置language: zh-Hans就可以设置成中文。但是我却设置不成功，然后网上教程说我可能 next/languages/zh-Hans.yml
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/15/first/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h4 id="1、language设置中文又问题。"><a href="#1、language设置中文又问题。" class="headerlink" title="1、language设置中文又问题。"></a>1、language设置中文又问题。</h4><p>按照教程搭建好了hexo，然后在设置的时候出现了问题。按照网上说一切顺利，但是在设置语言的时候出现了问题。里面说是设置<br><code>language: zh-Hans</code>就可以设置成中文。但是我却设置不成功，然后网上教程说我可能 <code>next/languages/zh-Hans.yml</code> 文件丢失，检查发现并没有。</p>
+<p>最后的解决方法：</p>
+<ol>
+<li>先执行 hexo clean 清空</li>
+<li>把 <code>next/languages/zh-Hans.yml</code> 的文件名字修改 zh-cn</li>
+<li>把 next 对应的 language 也修改了</li>
+<li>hexo g</li>
+<li>hexo s</li>
+</ol>
+
       
     </div>
     
@@ -337,14 +334,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -354,10 +357,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -365,6 +369,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="uyan_frame"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -385,8 +398,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -437,6 +459,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、language设置中文又问题。"><span class="nav-number">1.</span> <span class="nav-text">1、language设置中文又问题。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -577,6 +615,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -602,6 +644,10 @@
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2159154"></script>
+      <!-- UY END -->
     
   
 
